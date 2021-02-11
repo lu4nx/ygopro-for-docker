@@ -1,0 +1,17 @@
+services:
+  ygopro-game:
+    build: .
+    container_name: ygopro-game
+    privileged: true
+    environment:
+      - DISPLAY=unix$DISPLAY
+      - GDK_SCALE
+      - GDK_DPI_SCALE
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./deck:/ygopro/deck
+      - ./fonts:/ygopro/fonts
+      - ./pics:/ygopro/pics
+      - ./cards.cdb:/ygopro/cards.cdb
+      - ./replay:/ygopro/replay
+      - ./lflist.conf:/ygopro/lflist.conf

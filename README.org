@@ -1,17 +1,17 @@
-# 说明
+* 说明
 在不同的 Linux 发行版编译 ygopro 总会遇到问题，目前可以在 Debian 上稳定编译运行，因此将编译环境打包到 Docker 的 Debian 镜像中，然后通过和宿主机共享 X11 方式运行游戏。
 
 NOTE：该项目正在测试中。
 
-# 依赖
+* 依赖
 Docker、Docker-Compose
 
-# 编译
+* 编译
 #+begin_example
   $ sudo docker-compose build
 #+end_example
 
-# 宿主机配置
+* 宿主机配置
 需要安装：x11-server-utils，Fedora 执行：
 
 #+begin_example
@@ -24,7 +24,7 @@ Debian 系发行版执行：
   $ sudo apt-get install x11-xserver-utils
 #+end_example
 
-# 运行游戏
+* 运行游戏
 
 需要先将卡库、图片、运行脚本、禁卡表拷贝到当前目录，可从现有游戏中拷贝 pics、script、cards.cdb、lflist.conf 至当前目录。
 

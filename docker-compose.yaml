@@ -15,3 +15,4 @@ services:
       - ./cards.cdb:/ygopro/cards.cdb
       - ./replay:/ygopro/replay
       - ./lflist.conf:/ygopro/lflist.conf
+      - ./script:/ygopro/script

@@ -7,6 +7,8 @@ services:
       - DISPLAY=unix$DISPLAY
       - GDK_SCALE
       - GDK_DPI_SCALE
+    ports:
+      - '0.0.0.0:7911:7911'
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - ./deck:/ygopro/deck
